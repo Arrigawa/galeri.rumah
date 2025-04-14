@@ -1,0 +1,191 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://laksmi-tropical-bamboo-villa-ubud-bali.hotelmix.id/data/Photos/OriginalPhoto/8594/859430/859430180/Laksmi-Tropical-Bamboo-Villa-Ubud-Exterior.JPEG'); /* contoh URL */
+  background-size: cover;       /* supaya menutupi seluruh layar */
+  background-position: center;  /* posisi tengah */
+  background-repeat: no-repeat; /* biar tidak diulang */
+}
+
+
+header {
+  background-color: rgba(240, 190, 54, 0.7); /* warna kuning dengan transparansi 70% */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+}
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+  }
+  
+  button {
+    background-color: #2d6cdf;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #1c4db8;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 30px;
+  }
+  
+  .cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: none;
+    padding: 20px;
+    width: 280px;
+    max-height: 350px;
+    overflow-y: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+  }
+  
+  .cart h2 {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .item-keranjang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ccc;
+  }
+  
+  .item-keranjang .nama {
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .item-keranjang .harga {
+    color: #222;
+    font-weight: bold;
+  }
+  
+  .item-keranjang button.hapus {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  
+  .checkout-button {
+    margin-top: 12px;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .checkout-button:hover {
+    background-color: #388e3c;
+  }
+  
+
+  @media (max-width: 600px) {
+    .cart {
+      width: 90%;
+      right: 5%;
+      bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* Galeri jadi kolom 1 */
+    .gallery {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      gap: 12px;
+    }
+  
+    .card {
+      width: 90%;
+      padding: 12px;
+    }
+  
+    .card img {
+      border-radius: 8px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 10px 14px;
+    }
+  
+    /* Keranjang tetap nyaman */
+    .cart {
+      width: 90%;
+      right: 5%;
+      bottom: 10px;
+      font-size: 15px;
+      padding: 12px 16px;
+    }
+  
+    .checkout-button {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+  
+    /* Footer agar lebih kecil */
+    footer {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
